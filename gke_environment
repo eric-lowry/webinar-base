@@ -1,0 +1,8 @@
+#
+# source this file into the environment
+#
+export PROJECT=elastic-sa
+export REGION=us-central1-c
+export CLUSTER_NAME=elowry-webinar-base
+export CLUSTER_VERSION=1.24.10-gke.2300
+export CLUSTER_LABELS="division=field,org=sa,team=sa,project=ericlowry"

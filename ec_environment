@@ -1,0 +1,10 @@
+#
+# After running "terraform apply", source this file into the environment
+#
+
+export EC_ENDPOINT=$(terraform output -json | jq -r ".elasticsearch_endpoint.value")
+export EC_USERNAME=$(terraform output -json | jq -r ".elasticsearch_username.value")
+export EC_PASSWORD=$(terraform output -json | jq -r ".elasticsearch_password.value")
+export EC_CLOUD_ID=$(terraform output -json | jq -r ".elasticsearch_cloud_id.value")
+export EC_FLEET_URL=$(terraform output -json | jq -r ".fleet_endpoint.value")
+export EC_APM_URL=$(terraform output -json | jq -r ".apm_endpoint.value")

@@ -1,0 +1,7 @@
+provider "ec" {
+  apikey = "S ... Q=="
+}
+
+resource "ec_deployment" "custom-deployment-id" {
+  name = "my-deployment-name"
+}
